@@ -1,0 +1,364 @@
+html{
+  height: 100%;
+  width: 100%;
+     background-color:rgb(237, 232, 232);
+
+}
+ ul{list-style-type: none;
+  margin: 20px;
+  
+ width:30px;
+  
+}
+li{
+   margin-bottom:25px;
+ 
+}
+li a {
+  
+  color: #000;
+    padding: 8px 16px;
+  text-decoration: none;
+   margin-bottom:30px;
+   padding:20px;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  
+  background-color: #555;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns:repeat(30, 40px);
+  grid-template-rows:repeat(30, 40px);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+   margin-left:20%;
+   
+}
+.grid2{
+     display: grid;
+     grid-template-columns:repeat(1, 20px);
+     grid-template-rows:repeat(9, 20px);
+}
+.grid-item {
+ 
+   white-space: nowrap;
+  padding:0px;
+  text-align: center;
+  
+  
+}
+#word1 {
+   grid-column: 8 / 24;
+  grid-row: 13 / 17;
+  color:rgb(224, 150, 150);
+  font-size: 6em;
+
+}
+#word2 {
+   grid-column: 3 / 11;
+  grid-row: 17 / 19;
+  color: red;
+  font-size: 5em;
+  
+}
+#word3 {
+   grid-column: 14 / 21;
+  grid-row: 16 / 19;
+  color: red;
+  font-size: 4em ;
+
+}
+#word4 {
+   grid-column: 12 / 14;
+  grid-row: 4 / 13;
+  color: red;
+  font-size: 4em;
+    writing-mode: vertical-rl;
+
+}
+#word5 {
+   grid-column: 17 / 25;
+  grid-row: 18 / 21;
+  color: red;
+  font-size: 6em;
+
+}
+#word6 {
+   grid-column: 24 / 25;
+  grid-row: 13 / 17;
+  color: red;
+  font-size: 30px;
+    writing-mode: vertical-rl;
+}
+#word7 {
+   grid-column: 11 / 13;
+  grid-row: 17 / 20;
+  color: red;
+  font-size: 2.5em;
+    writing-mode: vertical-rl;
+}
+#word8 {
+   grid-column: 13 / 16;
+  grid-row: 20;
+  color: red;
+  font-size: 2.5em;
+
+}
+#word9 {
+   grid-column: 15 / 16;
+  grid-row: 6 / 13;
+  color: red;
+  font-size: 2em;
+  writing-mode: vertical-rl;
+
+}
+
+#word10 {
+   grid-column: 16 / 27;
+  grid-row: 11/13;
+  color: red;
+  font-size: 5em;
+
+}
+#word11 {
+   grid-column: 7 / 9;
+  grid-row: 11 / 16;
+  color: red;
+  font-size: 3em;
+    writing-mode: vertical-rl;
+
+}
+
+#word12 {
+   grid-column: 1 / 9;
+  grid-row: 9 / 12;
+  color: red;
+  font-size: 100px;
+
+}
+
+#word13 {
+   grid-column: 16 / 22;
+  grid-row: 8 / 11;
+  color: red;
+  font-size: 100px;
+
+}
+#word14 {
+   grid-column: 11;
+  grid-row: 4 / 13;
+  color: red;
+  font-size: 2em;
+   writing-mode: vertical-rl;
+}
+
+#word15 {
+   grid-column: 29 / 30;
+  grid-row: 20;
+  color: red;
+  font-size: 1em;
+
+}
+#word16 {
+   grid-column: 25 / 30;
+  grid-row: 13;
+  color: red;
+  font-size: 2em;
+
+}
+#word17 {
+   grid-column: 25 / 29;
+  grid-row: 15 / 16;
+  color: red;
+  font-size: 2em;
+
+}
+#word18 {
+   grid-column: 1 / 6;
+  grid-row: 15 / 16;
+  color: red;
+  font-size: 2em;
+
+}
+#word19 {
+   grid-column: 1 / 7;
+  grid-row: 14;
+  color: red;
+  font-size: 2em;
+
+}
+#word20 {
+   grid-column: 1 / 7;
+  grid-row: 7 / 9;
+  color: red;
+  font-size: 5em;
+
+}
+#word21 {
+   grid-column: 10 / 21;
+  grid-row: 21 / 24;
+  color: red;
+  font-size: 5em;
+
+}
+#word22 {
+   grid-column: 6 / 11;
+  grid-row: 5 / 7;
+  color: red;
+  font-size: 4em;
+
+}
+#word23 {
+   grid-column: 21 / 24;
+  grid-row: 21 / 29;
+  color: red;
+  font-size: 5em;
+   writing-mode: vertical-rl;
+}
+#word24 {
+   grid-column: 24 / 29;
+  grid-row: 22 / 23;
+  color: red;
+  font-size: 2em;
+
+}
+#word25 {
+   grid-column: 24 / 27;
+  grid-row: 23 / 25;
+  color: red;
+  font-size:4em;
+
+}
+
+#word26 {
+   grid-column: 24 / 26;
+  grid-row: 3 / 11;
+  color: red;
+  font-size: 4em;
+    writing-mode: vertical-rl;
+}
+
+#word27 {
+   grid-column: 26 / 28;
+  grid-row: 1 / 11;
+  color: red;
+  font-size: 5em;
+    writing-mode: vertical-rl;
+}
+
+#word28 {
+   grid-column: 16 / 21;
+  grid-row: 24 / 26;
+  color: red;
+  font-size: 4em;
+
+}
+#word29 {
+   grid-column: 2 / 6;
+  grid-row: 21 / 23;
+  color: red;
+  font-size: 5em;
+
+}
+#word30 {
+   grid-column: 8 / 10;
+  grid-row: 23 / 29;
+  color: red;
+  font-size: 4em;
+   writing-mode: vertical-rl;
+
+}
+#word31 {
+   grid-column: 7;
+  grid-row: 22 / 28;
+  color: red;
+  font-size: 2.5em;
+   writing-mode: vertical-rl;
+
+}
+#wordcloud{
+   background-color: rgb(237, 232, 232);
+}
+
+
+
+.highlighter{
+
+border-radius: .9em .6em;
+
+}
+.highlighterbutton{
+   padding:25px;
+   padding-left: 1em;
+}
+#button1{
+   background-color:rgb(244, 245, 203);
+   width:10px;
+   height:10px;
+   border-color:white;
+}
+#button2{
+   background-color:rgb(203, 245, 212);
+}
+#button3{
+   background-color:rgb(247, 208, 239);
+}
+#button4{
+   background-color:rgb(207, 238, 255);
+}
+#button5{
+   background-color:rgb(242, 222, 252);
+}
+#button6{
+   background-color:rgb(209, 205, 205);
+}
+#mainvocabword{
+   font-size: 10em;
+
+
+     
+}
+#randomword{
+    font-family: "Quattrocento Sans", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+   font-size:6em;
+   text-align:center;
+}
+#wordoftheday{
+   font-size:8em;
+   text-align:center;
+    font-family: "EB Garamond", serif;
+     font-weight: 400;
+     font-style: normal;
+   color:darkgray;
+  
+
+}
+#randomwordbutton{
+   text-align: center;
+   height:100px;
+   width:300px;
+     font-family: "Zain", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size:2.5em;
+   margin-left:42%;
+   
+   background-color:rgb(208,150,150);
+   border:none;
+   color:white;
+   border-radius: .6em;
+   
+}
+.icon{
+   width:500px;
+   height:500px;
+}
+
+
