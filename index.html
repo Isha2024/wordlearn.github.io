@@ -6,33 +6,80 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-  <script src="script3.js"></script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Butcherman&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Montserrat:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 
 </head>
  <body>  
-  <ul>
-    <li><a href="index.html"><img src="home (1).png"</a></li>
-    <li><a href="wordcloud.html"><img src="cloud (1).png"></a></li>
-    <li><a href="etymology.html"> <img src="cheque.png"> </a></li>
-     <li><a href="settings.html"> <img src="settings.png"> </a></li>
-    </ul>
-<h1> WordLearn </h1
+   <nav class="navbar">
+     <div class="nav-container">
 
-<h1> Word Of The Day</h1>
+       <!-- Logo -->
+       <div class="logo">
+        <h1> WordLearn </h1> 
+       </div>
+
+       <!-- Nav Icons -->
+       <ul class="nav-list">
+         <li>
+           <a href="index.html">
+             <img src="home (1).png" alt="Home">
+           </a>
+         </li>
+         <li>
+           <a href="wordcloud.html">
+             <img src="cloud (1).png" alt="Word Cloud">
+           </a>
+         </li>
+         <li>
+           <a href="etymology.html">
+             <img src="cheque.png" alt="Etymology">
+           </a>
+         </li>
+         <li>
+           <a href="settings.html">
+             <img src="settings.png" alt="Settings">
+           </a>
+         </li>
+       </ul>
+
+     </div>
+   </nav>
+
+
 
 
  
+   <button onclick="localStorage.clear()">Reset</button>
   
-  <h1 id="wordoftheday"> word of the day</h1>
-<h1 id="randomword"> random word</h1>
-<button id="randomwordbutton"> Generate A Word </button>
+     <h1 id="title">Word of the Day</h1>
+
+  
+
+     
+
+     <!-- Link JS at the END of body -->
+     <script src="script3.js" defer></script>
+ 
+ 
+
+
+
+  
+<h1 id="worderrr"> *today's word *</h1>
+<p id="countdown"></p>
+
 
 
    </body>
 </html>
+
+ 
