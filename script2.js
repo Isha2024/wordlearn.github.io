@@ -66,9 +66,20 @@ document.getElementById("button1").addEventListener("click",function(event){getb
   });
 
 
+  const wordEl2 = document.getElementById("wordtoannotate");
+   const word = localStorage.getItem("dailyWord");
 
+   if (word) {
+     wordEl2.textContent = word;
+   } else {
+     wordEl2.textContent = "No word loaded yet";
+   }
   
 
       
 
 });
+
+
+
+      
