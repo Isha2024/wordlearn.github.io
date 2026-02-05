@@ -1,34 +1,68 @@
 html{
   height: 100%;
   width: 100%;
+
      background-color:rgb(237, 232, 232);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
 }
- ul{list-style-type: none;
-  margin: 20px;
-  
- width:30px;
-  
-}
-li{
-   margin-bottom:25px;
- 
-}
-li a {
-  
-  color: #000;
-    padding: 8px 16px;
-  text-decoration: none;
-   margin-bottom:30px;
-   padding:20px;
+/* Navbar container */
+.navbar {
+  width: 100%;
+     background-color:#DDBDBE;
+  padding: 10px 0;
 }
 
-/* Change the link color on hover */
-li a:hover {
-  
-  background-color: #555;
-  color: white;
+/* Nav list */
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color:#DDBDBE;
+  padding: 10px 20px;
 }
+
+/* Flex container */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+/* Nav list */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+.nav-list li a {
+  display: flex;
+  align-items: center;
+}
+
+/* Icons */
+.nav-list img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+/* Hover effect */
+.nav-list a:hover img {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
 
 .grid-container {
   display: grid;
@@ -36,13 +70,14 @@ li a:hover {
   grid-template-rows:repeat(30, 40px);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-   margin-left:20%;
+   
    
 }
 .grid2{
      display: grid;
      grid-template-columns:repeat(1, 20px);
      grid-template-rows:repeat(9, 20px);
+   margin:auto;
 }
 .grid-item {
  
@@ -52,6 +87,14 @@ li a:hover {
   
   
 }
+.gridwrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  justify-items: center;
+    margin: 0 auto;
+}
+
 #word1 {
    grid-column: 8 / 24;
   grid-row: 13 / 17;
@@ -296,32 +339,98 @@ border-radius: .9em .6em;
    padding:25px;
    padding-left: 1em;
 }
-#button1{
-   background-color:rgb(244, 245, 203);
-   width:10px;
-   height:10px;
-   border-color:white;
+#button1 {
+  background-color: rgb(244, 245, 203);
+  border-color: rgb(220, 221, 170);
+   box-shadow: 0 4px 0 border-color;
+
 }
-#button2{
-   background-color:rgb(203, 245, 212);
+
+#button2 {
+  background-color: rgb(203, 245, 212);
+  border-color: rgb(170, 220, 180);
+   box-shadow: 0 4px 0 border-color;
+
 }
-#button3{
-   background-color:rgb(247, 208, 239);
+
+#button3 {
+  background-color: rgb(247, 208, 239);
+  border-color: rgb(220, 175, 210);
+   box-shadow: 0 4px 0 border-color;
+
 }
-#button4{
-   background-color:rgb(207, 238, 255);
+
+#button4 {
+  background-color: rgb(207, 238, 255);
+  border-color: rgb(175, 210, 230);
+   box-shadow: 0 4px 0 border-color;
+
 }
-#button5{
-   background-color:rgb(242, 222, 252);
+
+
+#button5 {
+  background-color: rgb(242, 222, 252);
+  border-color: rgb(210, 195, 225);
+   box-shadow: 0 4px 0 border-color;
+
 }
-#button6{
-   background-color:rgb(209, 205, 205);
+
+#button6 {
+  background-color: rgb(209, 205, 205);
+  border-color: rgb(180, 175, 175);
+   box-shadow: 0 4px 0 border-color;
+
 }
+
 #mainvocabword{
    font-size: 10em;
 
 
      
+}
+#worldcloudabout2{
+
+   
+     font-family: "EB Garamond", serif;
+     font-optical-sizing: auto;
+     font-weight: 200;
+     font-style: normal;
+   color: white;
+  
+   font-size: 2pc;
+margin-left:95px ;
+   margin-right:95px ;
+   padding: 10px;
+   text-align: center;
+
+   
+    background-color: #D0D0D0;
+     background-size: 150%;
+     opacity: 0.95;
+     border-radius: 6px;
+   
+
+   
+}
+
+
+#worldcloudabout{
+
+    text-align: center;
+     font-family: "EB Garamond", serif;
+     font-optical-sizing: auto;
+     font-weight: 200;
+     font-style: normal;
+   color: white;
+   background-color:rgb(208,150,150); 
+   font-size: 2pc;
+   margin-left:95px ;
+   margin-right:95px ;
+   margin-bottom: 0px;
+   padding: 10px;
+
+
+
 }
 #randomword{
     font-family: "Quattrocento Sans", sans-serif;
@@ -329,6 +438,7 @@ border-radius: .9em .6em;
      font-style: normal;
    font-size:6em;
    text-align:center;
+   color:rgb(180, 175, 175);
 }
 #wordoftheday{
    font-size:8em;
@@ -336,16 +446,42 @@ border-radius: .9em .6em;
     font-family: "EB Garamond", serif;
      font-weight: 400;
      font-style: normal;
-   color:darkgray;
-  
+   color:white;
+  background: #C99B9B;
 
+}
+#mainvocabword{
+   text-align:center;
+   font-family: "EB Garamond", serif;
+        font-weight: 400;
+        font-style: normal;
+      color:white;
+     background: #C99B9B;
+   margin-left: 50px;
+   margin-right: 50px;
+}
+#mainvocabword2{
+   text-align:center;
+   font-family: "EB Garamond", serif;
+        font-weight: 400;
+        font-style: normal;
+      color:white;
+     
+    background-color:#D0D0D0;
+   margin-left: 50px;
+   margin-right: 50px;
 }
 #randomwordbutton{
    text-align: center;
    height:100px;
    width:300px;
-     font-family: "Zain", sans-serif;
-     font-weight: 400;
+
+   .jost-<uniquifier> {
+     font-family: "Jost", sans-serif;
+     font-optical-sizing: auto;
+     font-weight: <weight>;
+     font-style: normal;
+   }
      font-style: normal;
      font-size:2.5em;
    margin-left:42%;
@@ -360,5 +496,131 @@ border-radius: .9em .6em;
    width:500px;
    height:500px;
 }
+
+
+.highlighterbutton {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.flower-btn::before,
+.flower-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: inherit;
+  z-index: -1;
+}
+
+.flower-btn::before {
+  transform: rotate(45deg);
+}
+
+.flower-btn::after {
+  transform: rotate(90deg);
+}
+#worderrr{
+   font-family: "Quattrocento Sans", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+   font-size:6em;
+   text-align:center;
+   color:white;
+  
+   
+   text-shadow:
+     0 0 5px rgba(236, 179, 191, 0.6),
+     0 0 15px rgba(236, 179, 191, 0.6),
+     0 0 30px rgba(236, 179, 191, 0.6);
+  
+
+  
+
+}
+#title{
+   font-family: "EB Garamond", serif;
+        font-weight: 400;
+        font-style: normal;
+      color:white;
+     background: #C99B9B;
+   text-align: center;
+}
+#countdown{
+   font-family: "EB Garamond", serif;
+        font-weight: 400;
+   font-size:4em;
+        font-style: normal;
+      color:white;
+     background: #C99B9B;
+   text-align: center;
+}
+#wordtoannotate{
+   font-family: "EB Garamond", serif;
+        font-weight: 400;
+   font-size:10em;
+        font-style: normal;
+     color:  #C99B9B;
+   text-align: center;
+}
+/* From Uiverse.io by bhaveshxrawat */ 
+.card {
+  width: 190px;
+  height: 254px;
+  background: #07182E;
+  position: relative;
+  display: flex;
+  place-content: center;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.card h2 {
+  z-index: 1;
+  color: white;
+  font-size: 2em;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  width: 300px;
+  background-image: linear-gradient(180deg, rgb(0, 183, 255), rgb(255, 48, 255));
+  height: 100%;
+  animation: rotBGimg 3s linear infinite;
+  transition: all 0.2s linear;
+}
+
+@keyframes rotBGimg {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  background: #07182E;
+  ;
+  inset: 5px;
+  border-radius: 15px;
+}  
+
+
+/* .card:hover:before {
+  background-image: linear-gradient(180deg, rgb(81, 255, 0), purple);
+  animation: rotBGimg 3.5s linear infinite;
+} */
+
 
 
